@@ -7,9 +7,9 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }),
-  provideRouter(routes, withHashLocation() , withInMemoryScrolling({
+  provideRouter(routes, withHashLocation(), withInMemoryScrolling({
     scrollPositionRestoration: 'enabled',
-  })),
+  }), withComponentInputBinding()),
   provideClientHydration(withEventReplay()),
   provideHttpClient(withFetch())
 
