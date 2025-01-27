@@ -1,6 +1,6 @@
 <section id="tv">
   <div class="container">
-    <input type="search" (input)="searchTvShows($event)" class="form-control col-md-6 col-10 mx-auto mb-5"
+    <input type="search" id="search" (input)="searchTvShows($event)" class="form-control col-md-6 col-10 mx-auto mb-5"
       placeholder="Search TVShow By Title. . . .">
     <div class="row gy-3">
       @for (tv of tvShows; track tv.id) {

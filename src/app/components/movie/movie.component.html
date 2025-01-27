@@ -1,6 +1,6 @@
 <section id="movie">
   <div class="container">
-    <input type="search" id="search" (input)="searchMovie($event)" class="form-control col-md-6 col-12 mx-auto mb-5"
+    <input type="search" id="search" (input)="searchMovie($event)" class="form-control mx-auto mb-5"
       placeholder="Search Movie By Title. . . .">
     <div class="row gy-3 align-items-center">
       @for (movie of movies; track movie.id) {

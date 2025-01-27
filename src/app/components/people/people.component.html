@@ -1,6 +1,6 @@
 <section id="tv">
   <div class="container">
-    <input type="search" (input)="searchPerson($event)" class="form-control col-md-6 col-10 mx-auto mb-5"
+    <input type="search" id="search" (input)="searchPerson($event)" class="form-control mx-auto mb-5"
       placeholder="Search Person By Name. . . .">
     <div class="row gy-3">
       @for (actor of people; track actor.id) {
