@@ -4,5 +4,10 @@ export const serverRoutes: ServerRoute[] = [
   {
     path: '**',
     renderMode: RenderMode.Prerender
-  }
+  } ,
+    {path: 'details/:media/:id',
+      renderMode: RenderMode.Client
+    },
+
+  // {}
 ];
